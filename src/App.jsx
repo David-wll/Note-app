@@ -5,7 +5,7 @@ import Search from './components/Search';
 import Header from './components/Header';
 import AddNote from './components/AddNote';
 import useLocalStorage from './useLocalStorage';
-import './app.css'
+import './App.css'
 
 const App = () => {
   const [notes, setNotes] = useLocalStorage('notes', []);
