@@ -1,0 +1,192 @@
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 2000px;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease; 
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.dark-mode body{
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode {
+  background-color: #121212; 
+  color: #f9f9f9; 
+}
+.dark-mode .note{
+  color: white;
+}
+
+.container {
+  background-color: #ffffff; 
+  border-radius: 15px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Make sure the container takes full width */
+  max-width: 1000px;
+  
+}
+
+
+
+
+.dark-mode .container {
+  background-color: #464040; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.filters select {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff; /* Light background for select */
+  transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+.filters select:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+.filters select:focus {
+  outline: none; /* Remove default outline */
+  border-color: #0056b3; /* Darker border color when focused */
+  box-shadow: 0 0 5px rgba(0, 91, 230, 0.5); /* Add subtle shadow */
+}
+
+.filters select option {
+  padding: 10px; /* Increase padding for options */
+}
+
+
+.noteslist {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.note {
+  background-color: #31a9d5; 
+  color: #333; 
+  border-radius: 12px; 
+  padding: 20px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ddd; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+  white-space: pre-wrap;
+  transition: transform 0.2s ease, background-color 0.3s ease; 
+}
+.note select{
+  border: 12px;
+  border-radius: 12px;
+  padding: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.note input{
+  padding: 10px;
+  border-radius: 12px;
+  background-color: rgb(165, 204, 204);
+  color: #121212;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  
+}
+
+.note:hover {
+  transform: translateY(-5px); 
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.dark-mode .note {
+  background-color: #2a2a2a; 
+  color: #f9f9f9;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #e7f6f4; 
+  outline: none;
+  padding: 15px;
+  border-radius: 8px; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #121212;
+}
+
+textarea::placeholder {
+  color: #aaa; /* Change placeholder color */
+}
+
+.save { 
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save:hover {
+  background-color: #5dce43;
+  transform: scale(1.05);
+  border-radius: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1; 
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.search input {
+  border: none;
+  background-color: transparent; 
+  color: inherit;
+  outline: none;
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 1rem;
+}
+.header{
+  color: #121212;
+}
+.delete{
+  color: red;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.delete:hover{
+  background-color: #ff0000;
+  transform: scale(1.05);
+  border-radius: 10px;
+}
